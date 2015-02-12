@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>BACKBONE Marionette Tutorial: Collections</title>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+
+    <script src="./assets/javascripts/vendor/underscore.js"></script>
+    <script src="./assets/javascripts/vendor/backbone.js"></script>
+    <script src="./assets/javascripts/vendor/backbone.marionette.js"></script>
+
+    <script src="./assets/javascripts/app.js"></script>
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="liste">
+    </div>
+    <script type="text/template" id="listeTemplate">
+      <thead>
+        <tr class='header'>
+          <th>No</th><th>Phrase</th><th><input type="text" value="evt" id="newDo" ></input></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </script>
+
+    <script type="text/template" id="pointListe">
+        <td class="no"><%= no %></td><td class="phrase"><%= reste_phrase %></td><td><a class='nuke'>nuke</a></td>
+    </script>
+    
+  </body>
+</html>
